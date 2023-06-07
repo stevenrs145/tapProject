@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "8dca31e7-da37-4e9b-81c9-c61cdaebb4c9",
+		"name": "prueba_tecnica_steven",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18590959"
+	},
+	"item": [
+		{
+			"name": "API listado de paises",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/proyectnewtap/public/lista-paises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectnewtap",
+						"public",
+						"lista-paises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api crear registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomPais\": \"Brasil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectnewtap/public/api/crear-paises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectnewtap",
+						"public",
+						"api",
+						"crear-paises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api mostrar registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectnewtap/public/api/ver-paises",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectnewtap",
+						"public",
+						"api",
+						"ver-paises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api acctualizacion registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"111111\",\r\n    \"nomPais\" : \"nombre nuevo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectnewtap/public/api/actualizar-paises?=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectnewtap",
+						"public",
+						"api",
+						"actualizar-paises"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api eliminar registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/proyectnewtap/public/api/eliminar-paises?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectnewtap",
+						"public",
+						"api",
+						"eliminar-paises"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
