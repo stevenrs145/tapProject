@@ -1,0 +1,16 @@
+{
+    "fields":
+    [
+        {
+            "name": "id",
+            "type": "integer#nullable"
+        },
+        {
+            "name": "nomPais",
+            "type": "text"
+        }
+       
+    ]
+
+
+}

@@ -1,0 +1,28 @@
+{
+    "fields":
+    [
+        {
+            "name": "id",
+            "type": "integer#nullable"
+        },
+        {
+            "name": "pais_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "nomDepto",
+            "type": "text"
+        }
+       
+    ],
+
+    "foreign_keys": [
+        {
+            "column": "pais_id",
+            "references": "id",
+            "on": "pais",
+            "onDelete": "cascade"
+        }
+    ]
+
+}

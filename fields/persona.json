@@ -1,0 +1,30 @@
+{
+    "fields":
+    [
+        
+        {
+            "name": "depto_id",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "nombre_completo",
+            "type": "string"
+        },
+        {
+            "name": "direccion",
+            "type": "string"
+        }
+       
+    ]
+    ,
+
+    "foreign_keys": [
+        {
+            "column": "depto_id",
+            "references": "id",
+            "on": "departamento",
+            "onDelete": "cascade"
+        }
+    ]
+
+}
